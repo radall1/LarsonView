@@ -16,4 +16,4 @@ The code currently available in this repository represents the Node.js applicati
 
 This project was influenced by 3 different St. Olaf courses. The idea was born in PHYS 160: Intro to Engineering Design (using Arduino boards), the implementation blueprint was attempted in CS 251: Software Design and then finally, the switch to Raspberry Pis happened after getting introduced to them in CS 241: Hardware Design. 
 
-All this to say: the `/sd_project` directory contains the CS 251: Software Design primitive implementation of this project which was very different (using Arduinos, C++ and no database) and unrelated to how it currently works. It exists primarily for nostalgia purposes now. 
+All this to say: the `/sd_project` directory contains the CS 251: Software Design primitive implementation of this project which was very different (using Arduino boards, C++ and no database) and unrelated to how it currently works. It exists primarily for nostalgia purposes now. 
