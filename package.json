@@ -1,5 +1,5 @@
 {
-  "name": "larsonview",
+  "name": "express-example",
   "version": "1.0.0",
   "description": "Express + PlanetScale",
   "main": "index.js",
@@ -11,12 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "^4.18.2",
+    "express": "^4.17.1",
     "mysql2": "^2.3.3"
   },
   "engines": {
     "node": "16.17.1"
   },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/planetscale/express-example.git"
