@@ -1,8 +1,29 @@
 {
-  "name": "LarsonView",
-  "packageManager": "yarn@3.6.0",
+  "name": "express-example",
+  "version": "1.0.0",
+  "description": "Express + PlanetScale",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.3.0",
-    "mysql2": "^3.3.5"
-  }
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3"
+  },
+  "engines": {
+    "node": "16.17.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planetscale/express-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/planetscale/express-example/issues"
+  },
+  "homepage": "https://github.com/planetscale/express-example#readme"
 }
