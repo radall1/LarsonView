@@ -1,0 +1,5 @@
+Laundry 04 Occupied 30 mins 20 30
+Laundry 00 Occupied 10 mins 21 00
+Laundry 01 Occupied 40 mins 21 02
+Laundry 00 Occupied 50 mins 21 22
+Laundry 04 Occupied 20 mins 21 25

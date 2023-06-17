@@ -1,0 +1,11 @@
+- message_id: 6
+- event_info:
+    type: touch_up
+    start_x: 137
+    start_y: 451
+    point_x: 137
+    point_y: 451
+    nodes:
+      - Button_34
+    id: button_1
+- first_name: 'undefined'

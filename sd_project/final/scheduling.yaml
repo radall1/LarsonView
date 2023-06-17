@@ -1,0 +1,147 @@
+- View:
+    style:
+      flex: 1
+      flexDirection: row
+      backgroundColor: gold #come back
+    children: 
+      - View:
+          style: 
+            width: 150
+            height: 50
+            #backgroundColor: gray
+            #transform: [ {translateX: 0}, {translateY: 0}]
+          children:
+            - View:
+                style:
+                  width: 280
+                  height: 70
+                  backgroundColor: gold
+                  transform: [ {translateX: 10}, {translateY: 40}]
+                children:
+                  - Text:
+                      style:
+                          color: blue
+                          fontSize: 30
+                      index: 500
+            - View:
+                style:
+                  width: 280
+                  height: 70
+                  backgroundColor: gold
+                  transform: [ {translateX: 10}, {translateY: 50}]
+                children:
+                  - Text:
+                      style:
+                          color: purple
+                          fontSize: 30
+                      index: 1000
+            - View:
+                style: #time 1
+                    width: 80
+                    height: 70
+                    backgroundColor: gold
+                    transform: [ {translateX: 10}, {translateY: 60}]
+                children:
+                  - Text:
+                      style:
+                          color: purple
+                          fontSize: 30
+                      index: 530
+            - View: #button 1
+                children:
+                    - Button:
+                            id: unavailable #schedule
+                            style:
+                              width: 190
+                              height: 70
+                              backgroundColor: red #will change to green depending on availability
+                              transform: [ {translateX: 100}, {translateY: -10}]
+                            children:
+                              - Text:
+                                  style:
+                                      color: purple
+                                      fontSize: 30
+                                  index: 600                                                   
+                            on_touch:
+                              backgroundColor: green                          
+            - View: #time 2
+                style:
+                    width: 80
+                    height: 70
+                    backgroundColor: gold
+                    transform: [ {translateX: 10}, {translateY: 0}]
+                children:
+                  - Text:
+                      style:
+                          color: purple
+                          fontSize: 30
+                      index: 560
+            - View: #button 2
+                children:
+                    - Button:
+                            id: available_1 #schedule
+                            style:
+                              width: 190
+                              height: 70
+                              backgroundColor: {available_1_color} #will change to red depending on availability
+                              transform: [ {translateX: 100}, {translateY: -70}]
+                            children:
+                              - Text:
+                                  style:
+                                      color: purple
+                                      fontSize: 30
+                                  index: 620                                                   
+                            on_touch:
+                              backgroundColor: green  
+            - View: #time 3
+                style:
+                    width: 80
+                    height: 70
+                    backgroundColor: gold
+                    transform: [ {translateX: 10}, {translateY: -60}]
+                children:
+                  - Text:
+                      style:
+                          color: purple
+                          fontSize: 30
+                      index: 580
+            - View: #button 3
+                children:
+                    - Button:
+                            id: available_2 #schedule
+                            style:
+                              width: 190
+                              height: 70
+                              backgroundColor: {available_2_color} #will change to red depending on availability
+                              transform: [ {translateX: 100}, {translateY: -130}]
+                            children:
+                              - Text:
+                                  style:
+                                      color: purple
+                                      fontSize: 30
+                                  index: 640                                                   
+                            on_touch:
+                              backgroundColor: green  
+            - View: #button 3
+                children:
+                    - Button:
+                            id: return #schedule
+                            style:
+                              width: 120
+                              height: 50
+                              backgroundColor: lightblue #will change to red depending on availability
+                              transform: [ {translateX: 100}, {translateY: -120}]
+                            children:
+                              - Text:
+                                  style:
+                                      color: purple
+                                      fontSize: 30
+                                  index: 800                                                   
+                            on_touch:
+                              backgroundColor: green  
+                              
+                              
+                      
+
+
+
