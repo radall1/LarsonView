@@ -8,7 +8,7 @@ LarsonView is a website that allows users to remotely check the availability of 
 
 ## How does this work?
 
-There are Raspberry Pis, connected to the washing machines in Larson Hall, that measure the electricity being consumed by each individual washer. It emits that data through an algorithm that determines if it is available or occupied. Then, the Raspberry Pis update a cloud-based database that stores the status of each washer machine (code will be provided later).
+There are Raspberry Pis, connected to the washing machines in Larson Hall, that measure the current intensity being consumed by each individual washer. It emits that data through an algorithm that determines if it is available or occupied. Then, the Raspberry Pis update a cloud-based database that stores the status of each washer machine (code will be provided later).
 
 The code currently available in this repository represents the Node.js application that queries information from that database and displays it to the users. 
 
