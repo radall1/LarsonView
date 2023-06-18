@@ -2,7 +2,7 @@ require('dotenv').config(); // Load environment variables from .env file
 
 const express = require('express');
 const app = express();
-const port = process.env.PORT ?? 8034; // Set the port number from environment variables or use 8010 as default
+const port = process.env.PORT ?? 8012; // Set the port number from environment variables or use 8010 as default
 
 const mysql = require('mysql2');
 const dbConnection = mysql.createConnection(process.env.DATABASE_URL); // Create a connection to the MySQL database using the provided URL
@@ -20,7 +20,12 @@ app.get('/', (req, res) => {
     // Prepare the box content HTML
     let boxHtml = '';
     rows.forEach((row) => {
-      const boxClass = row.status === 'occupied' ? 'occupied-box' : 'available-box';
+
+      if (row.status == 'occupied') {
+        boxClass = 'occupied-box'
+      } else if (row.status == 'available') {
+        boxClass = 'available-box'
+      } else {boxClass = 'broke-box'}
 
       boxHtml += `<div class="box ${boxClass}"><h3>${row.machine}</h3><p>${row.status}</p><p>${row.time_done}</p></div>`;
     });
