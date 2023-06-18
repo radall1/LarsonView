@@ -29,11 +29,32 @@
       }
 
       .box {
-        width: calc(33.33% - 20px);
+        width: 80px;
+        height: 80px;
         margin: 10px;
-        padding: 10px;
         background-color: #FFFFFF; /* Updated background color of the boxes to white */
-        text-align: center;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .circle-inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #C7F3D9; /* Light green background color for available circles */
+      }
+
+      .circle-dot {
+        width: 20px;
+        height: 20px;
+        background-color: #FFC0CB; /* Occupied circle dot color */
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .box h3 {
@@ -57,14 +78,6 @@
 
       .low-count {
         background-color: red;
-      }
-
-      .occupied-box {
-        background-color: #FFC0CB;
-      }
-
-      .available-box {
-        background-color: #C7F3D9; /* Light green background color for available boxes */
       }
     </style>
     <script>
