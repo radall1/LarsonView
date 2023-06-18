@@ -2,7 +2,7 @@ require('dotenv').config(); // Load environment variables from .env file
 
 const express = require('express');
 const app = express();
-const port = process.env.PORT ?? 8010; // Set the port number from environment variables or use 8010 as default
+const port = process.env.PORT ?? 8014; // Set the port number from environment variables or use 8010 as default
 
 const mysql = require('mysql2');
 const dbConnection = mysql.createConnection(process.env.DATABASE_URL); // Create a connection to the MySQL database using the provided URL
