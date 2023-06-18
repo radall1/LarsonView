@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     rows.forEach((row) => {
       const boxClass = row.status === 'occupied' ? 'occupied-box' : 'available-box';
       
-      boxContent += `<div class="box ${boxClass}"><h3>${row.machine}</h3><p>${row.status}</p><p>ETA: ${row.time_done}</p></div>`;
+      boxContent += `<div class="box ${boxClass}"><h3>${row.machine}</h3><p>${row.status}</p><p>${row.time_done}</p></div>`;
     });
 
     // Calculate countText and countClass
