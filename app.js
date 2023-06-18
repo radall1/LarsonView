@@ -15,11 +15,11 @@ app.get('/', (req, res) => {
   connection.query('SELECT * FROM roster', function (err, rows, fields) {
     if (err) throw err;
 
-    // Prepare the table rows HTML
-    let tableRows = '';
+    // Prepare the box content HTML
+    let boxContent = '';
     rows.forEach((row) => {
-      const rowClass = row.status === 'occupied' ? 'occupied-row' : '';
-      tableRows += `<tr class="${rowClass}"><td>${row.machine}</td><td>${row.status}</td><td>${row.time_done}</td></tr>`;
+      const boxClass = row.status === 'occupied' ? 'occupied-box' : '';
+      boxContent += `<div class="box ${boxClass}"><h3>${row.machine}</h3><p>${row.status}</p><p>ETA: ${row.time_done}</p></div>`;
     });
 
     // Calculate countText and countClass
@@ -36,15 +36,15 @@ app.get('/', (req, res) => {
       countClass = 'low-count';
     }
 
-    renderResponse(res, countText, tableRows, countClass);
+    renderResponse(res, countText, boxContent, countClass);
   });
 });
 
-function renderResponse(res, countText, tableRows, countClass) {
+function renderResponse(res, countText, boxContent, countClass) {
   const html = fs.readFileSync('./index.html', 'utf8');
   const modifiedHtml = html
     .replace('{{countText}}', countText)
-    .replace('{{tableRows}}', tableRows)
+    .replace('{{boxContent}}', boxContent)
     .replace('{{countClass}}', countClass);
   
   res.send(modifiedHtml);

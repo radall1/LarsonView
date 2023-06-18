@@ -60,6 +60,10 @@
       .occupied-row {
         background-color: red;
       }
+
+      .occupied-box {
+        background-color: red;
+      }
     </style>
     <script>
       // Refresh the page every 10 seconds
@@ -78,36 +82,7 @@
       </div>
       <h2>Machine Roster</h2>
       <div class="box-container">
-        <div class="box">
-          <h3>Machine 1</h3>
-          <p>Status: Online</p>
-          <p>ETA: 10 minutes</p>
-        </div>
-        <div class="box">
-          <h3>Machine 2</h3>
-          <p>Status: Offline</p>
-          <p>ETA: N/A</p>
-        </div>
-        <div class="box">
-          <h3>Machine 3</h3>
-          <p>Status: Online</p>
-          <p>ETA: 5 minutes</p>
-        </div>
-        <div class="box">
-          <h3>Machine 4</h3>
-          <p>Status: Offline</p>
-          <p>ETA: N/A</p>
-        </div>
-        <div class="box">
-          <h3>Machine 5</h3>
-          <p>Status: Online</p>
-          <p>ETA: 3 minutes</p>
-        </div>
-        <div class="box">
-          <h3>Machine 6</h3>
-          <p>Status: Online</p>
-          <p>ETA: 7 minutes</p>
-        </div>
+        {{boxContent}}
       </div>
     </div>
   </body>
