@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8077;
 
 const mysql = require('mysql2');
 const connection = mysql.createConnection(process.env.DATABASE_URL);
@@ -18,7 +18,8 @@ app.get('/', (req, res) => {
     // Prepare the box content HTML
     let boxContent = '';
     rows.forEach((row) => {
-      const boxClass = row.status === 'occupied' ? 'occupied-box' : '';
+      const boxClass = row.status === 'occupied' ? 'occupied-box' : 'available-box';
+      
       boxContent += `<div class="box ${boxClass}"><h3>${row.machine}</h3><p>${row.status}</p><p>ETA: ${row.time_done}</p></div>`;
     });
 
