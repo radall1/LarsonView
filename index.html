@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LarsonView</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+    <style>
+      body {
+        text-align: center;
+        font-family: 'Fira Code', monospace;
+        background: #2C3A47;
+        color: #F8EFBA;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .box {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        padding: 10px;
+        background-color: rgba(88, 177, 159, 0.5);
+        text-align: center;
+      }
+
+      .box h3 {
+        margin-top: 0;
+      }
+
+      .count-container {
+        margin-top: 20px;
+        background-color: rgba(88, 177, 159, 0.8);
+        padding: 10px;
+        display: inline-block;
+      }
+
+      .count {
+        font-size: 20px;
+        color: #F8EFBA;
+      }
+
+      .low-count {
+        background-color: red;
+      }
+
+      .occupied-row {
+        background-color: red;
+      }
+    </style>
+    <script>
+      // Refresh the page every 10 seconds
+      setInterval(() => {
+        location.reload();
+      }, 10000);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>LarsonView</h1>
+      <div class="count-container {{countClass}}">
+        <div class="count">
+          {{countText}}
+        </div>
+      </div>
+      <h2>Machine Roster</h2>
+      <div class="box-container">
+        <div class="box">
+          <h3>Machine 1</h3>
+          <p>Status: Online</p>
+          <p>ETA: 10 minutes</p>
+        </div>
+        <div class="box">
+          <h3>Machine 2</h3>
+          <p>Status: Offline</p>
+          <p>ETA: N/A</p>
+        </div>
+        <div class="box">
+          <h3>Machine 3</h3>
+          <p>Status: Online</p>
+          <p>ETA: 5 minutes</p>
+        </div>
+        <div class="box">
+          <h3>Machine 4</h3>
+          <p>Status: Offline</p>
+          <p>ETA: N/A</p>
+        </div>
+        <div class="box">
+          <h3>Machine 5</h3>
+          <p>Status: Online</p>
+          <p>ETA: 3 minutes</p>
+        </div>
+        <div class="box">
+          <h3>Machine 6</h3>
+          <p>Status: Online</p>
+          <p>ETA: 7 minutes</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
