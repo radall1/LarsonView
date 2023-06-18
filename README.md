@@ -6,6 +6,8 @@
 
 LarsonView is a website that allows users to remotely check the availability of laundry machines in Larson Hall through a real-time dashboard. This work was supported by an $800 entrepreneurial grant from the Piper Center. You can access the website [here](https://larsonview.com).
 
+![website](https://raw.githubusercontent.com/radall1/LarsonView/main/images/demo.png).
+
 ## How does this work?
 
 There are Raspberry Pis, connected to the washing machines in Larson Hall, that measure the current intensity being consumed by each individual washer. It emits that data through an algorithm that determines if it is available or occupied. Then, the Raspberry Pis update a cloud-based database that stores the status of each washer machine (code will be provided later).
