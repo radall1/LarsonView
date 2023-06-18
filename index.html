@@ -29,11 +29,14 @@
       }
 
       .box {
-        width: calc(33.33% - 20px);
+        width:100px;
+        height: 100px;
         margin: 10px;
-        padding: 10px;
         background-color: #FFFFFF; /* Updated background color of the boxes to white */
-        text-align: center;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
       }
 
       .box h3 {
@@ -55,10 +58,6 @@
         color: #2C3A47; /* Updated text color */
       }
 
-      .low-count {
-        background-color: red;
-      }
-
       .occupied-box {
         background-color: #FFC0CB;
       }
@@ -66,16 +65,14 @@
       .available-box {
         background-color: #C7F3D9; /* Light green background color for available boxes */
       }
+      
+      .low-count {
+        background-color: red;
+      }
     </style>
-    <script>
-      // Refresh the page every 10 seconds
-      setInterval(() => {
-        location.reload();
-      }, 10000);
-    </script>
+    <script src="app.js"></script>
   </head>
   <body>
-    
     <div class="container">
       <h1>LarsonView</h1>
       <div class="count-container {{availabilityClass}}">
