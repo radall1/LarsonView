@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
       availabilityText = `${availableWashersCount} Washer${availableWashersCount > 1 ? 's' : ''} Available`;
     } else {
       const earliestTime = rows.reduce((minTime, row) => (row.time_done < minTime ? row.time_done : minTime), rows[0].time_done);
-      availabilityText = `Earliest Time Available: ${earliestTime}`;
+      availabilityText = `Next Machine Frees at ${earliestTime}`;
       availabilityClass = 'low-count';
     }
 
