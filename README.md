@@ -4,7 +4,7 @@
 
 ## Purpose
 
-LarsonView is a website that allows users to remotely check the availability of laundry machines in Larson Hall through a real-time dashboard. This work was supported by an $800 entrepreneurial grant from the Piper Center. You can access the website [here](https://larsonview.com).
+LarsonView is a website that allows users to remotely check the availability of laundry machines in Larson Hall through a real-time dashboard. This work was supported by an $800 entrepreneurial grant from the Piper Center. 
 
 ![website](https://raw.githubusercontent.com/radall1/LarsonView/main/images/demo.png)
 
